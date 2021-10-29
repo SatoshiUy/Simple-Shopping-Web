@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo" class="header-item">LOGO</div>
+            <div id="title">Welcome to Apple Store</div>
+            <div id="cartToggle" class="header-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+            </div>
+        </div>
+        <!-- Title -->
+        <div id="wp-content">
+        <!-- SIDEBAR -->
+            <div id="sidebar">
+                <ul class=nav-list>
+                    <!-- Filter items -->
+                    <li class="nav-list-item" onclick="filterSelection('all')">
+                        All
+                    </li>
+                    <li class="nav-list-item" onclick="filterSelection('mac')">
+                        Mac
+                    </li>
+                    <li class="nav-list-item" onclick="filterSelection('ipad')">
+                        Ipad
+                    </li>
+                    <li class="nav-list-item" onclick="filterSelection('iphone')">
+                        Iphone
+                    </li>
+                </ul>
+            </div>
+            <!-- CONTENT -->
+            <div id="content">
+                <!-- mac -->
+                <div id="mac">
+                    <div id="mac-title">MAC</div>
+                    <div class="products">
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/11/12/637407967465471535_mba-2020-gold-1.png"></image>
+                            <div class="product-name">Macbook Air 128GB</div>
+                            <div class="produc-price"> 29.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('MA29')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/10/19/637702684259566248_macbook-pro-16-2021-bac-1.jpg"></image>
+                            <div class="product-name">Macbook Pro 16inch M1 Max</div>
+                            <div class="produc-price"> 66.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('MP1666')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/11/12/637408000895490753_mbp-2020-m1-gray-2.png"></image>
+                            <div class="product-name">Macbook Pro 13inch M1</div>
+                            <div class="produc-price"> 40.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('MP1340')">Add to cart</button>
+                        </div>    
+                    </div>
+                </div>
+                <!-- ipad -->
+                <div id="ipad">
+                    <div id="ipad-title">IPAD</div>
+                    <div class="products ipad">
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/4/21/637546068956139190_ipad-pro-12-9-cell-xam-1.jpg"></image>
+                            <div class="product-name">iPad Pro 12.9 2021 M1 Wi-Fi 5G 128GB</div>
+                            <div class="produc-price"> 35.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IPP35')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/12/8/637430344008900880_ipad-air-10-9-2020-wi-fi-cellular-xanh-1.png"></image>
+                            <div class="product-name">iPad Air 10.9 2020 Wi-Fi + Cellular 64GB</div>
+                            <div class="produc-price"> 20.800.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IPA2208')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673401506930865_ipad-mini-8-3-2021-wi-fi-5g-xam-1.jpg"></image>
+                            <div class="product-name">iPad Mini 8.3 2021 Wi-Fi 5G 64GB</div>
+                            <div class="produc-price"> 20.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IPM20')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673417056583747_ipad-10-2-2021-wi-fi-bac-1.jpg"></image>
+                            <div class="product-name">iPad 10.2 2021 Wi-Fi 64GB</div>
+                            <div class="produc-price"> 10.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IPB10')">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- iphone -->
+                <div id="iphone">
+                    <div id="iphone-title">IPHONE</div>
+                    <div class="products iphone">
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673217819795830_iphone-13-pro-max-xam-1.jpg"></image>
+                            <div class="product-name">iPhone 13 Pro Max 128GB</div>
+                            <div class="produc-price"> 34.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IP13PM')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/15/637673230231791121_iphone-13-mini-den-1.jpg"></image>
+                            <div class="product-name">iPhone 13 128GB</div>
+                            <div class="produc-price"> 25.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IP13')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2021/9/16/637673860095973501_iphone-13-pro-max-bac-1.jpg"></image>
+                            <div class="product-name">iPhone 13 Pro 128GB</div>
+                            <div class="produc-price"> 31.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IP13P')">Add to cart</button>
+                        </div>
+                        <div class="product">
+                            <image class="product-img" src="https://images.fpt.shop/unsafe/fit-in/800x800/filters:quality(90):fill(white):upscale()/fptshop.com.vn/Uploads/Originals/2020/10/14/637382725406081030_ip-12-pro-max-vang-1.png"></image>
+                            <div class="product-name">iPhone 12 Pro Max 128GB</div>
+                            <div class="produc-price"> 31.000.000đ </div>
+                            <button class="btn-cart" onclick="addToCart('IP12PM')">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="copyright">Copyright</div>
+        </div>
+        <div id="layout-opacity" class=""></div>
+            <div class="cart-menu">
+                <div id="exit-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+                </div>
+                <div class="cart-title">
+                        YOUR CART  
+                </div>
+                <div class="cart-list-container">
+                    <table id="cartList">
+                        <tr>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn-buy-container">
+                        <button id="buybtn" onclick="buy()">Buy</button>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
